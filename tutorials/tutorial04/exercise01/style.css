@@ -1,0 +1,51 @@
+body{
+    background-color: lightgray;
+    margin: 0;
+}
+
+header {
+    background-color: #b4cded;
+    Font-family: Impact;
+    display:flex;
+    justify-content: center;
+    height: 10vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.navbar {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    Font-family: Impact;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#images {
+    border: 2px;
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #344966;
+    color:white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: 5vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}

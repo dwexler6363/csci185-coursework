@@ -1,0 +1,50 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: large;
+}
+
+#home{
+    background-color: #BFFFBC;
+    color: darkgoldenrod;
+    text-align: center;
+    line-height: 6vh;
+    height: 100vh;
+    padding: 50vh
+}
+
+#bio{
+    background-color: #B5D2CB;
+    color: darkgoldenrod;
+    text-align: center;
+    line-height: 6vh;
+    height: 100vh;
+    padding: 50vh
+}
+
+#portfolio{
+    background-color: #A8AEC1;
+    color: darkgoldenrod;
+    text-align: center;
+    line-height: 6vh;
+    height: 100vh;
+    padding: 50vh
+}
+
+#contact{
+    background-color: #A09EBB;
+    color: darkgoldenrod;
+    text-align: center;
+    line-height: 6vh;
+    height: 100vh;
+    padding: 50vh
+}

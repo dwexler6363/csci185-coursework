@@ -1,0 +1,64 @@
+/* You're welcome to change any of this! */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px; 
+    font-family: 'Courier New', monospace;
+}
+
+section  {
+    padding: 80px;
+}
+header {
+    font-size: larger; font-style: italic; 
+    background: #FEAC5E;  /* fallback for old browsers */
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 30px; color:   #430d49;
+    font-family:'Courier New', monospace;
+}
+h1{
+    @font-face {
+        src: url(\Train_One\TrainOne-Regular.ttf);
+        font-family: TrainOne-Regular
+    }
+}
+h2 {
+    margin-left: -30px;
+}
+
+p, li {
+    line-height: 2em;
+    margin-bottom: auto;
+}
+
+ul {
+    background-color:#ffffff; 
+    font-style: normal; color: #430d49;
+    opacity: .9;
+    margin-left: 30px;
+    padding-left: 30px;
+  }
+#tutorials {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px; color:  #580766;
+}
+
+#homework {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px; color:  #580766;
+}
+#inspiration {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px; color:   #580766;
+}
+
+body {
+    background-image: url('images/bear.webp');
+    min-height: 100vh;
+}

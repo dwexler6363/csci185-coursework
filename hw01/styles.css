@@ -1,0 +1,192 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 1px;
+}
+
+/* Your CSS Code Here! */
+/*beginning of header for webpage*/
+.navbar {
+    display: flex;
+    justify-content: right;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 7px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.header {
+    background-color: darkcyan;
+    height: 55vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family:cursive;
+    padding-top: 10px;
+    margin-top: 5vh;
+}
+
+#profile-pic {
+    max-width: 34vh;
+    max-height: auto;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin:auto
+}
+
+#about {
+    margin-left: 50vh;
+    margin-right: 50vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5;
+    font-family:cursive;
+}
+/*end of header for webpage*/
+
+/*beginning of photo section*/
+h3{
+    font-family: cursive;
+}
+
+h5 {
+    display: flex;
+    justify-content: left;
+    padding-top: 12vh;
+    padding-left: 16vh;
+    font-family:cursive;
+    font-size: 20px;
+}
+
+#projects {
+    background-color: lightgrey;
+    padding-left: 35vh;
+    padding-right: 20vh;
+    height: 130vh
+}
+
+.project-holder p{
+    width: 45vh;
+    font-family: cursive;
+}
+
+img {
+    height: 30vh;
+    width: 45vh;
+}
+
+.card {
+    float: left;
+    height: 50vh;
+    padding-left: 15vh;
+    text-align: left;
+}
+/*end of photo section*/
+
+/* contact section*/
+h4 p{   
+    display: flex;
+    justify-content: left;
+    padding-left: 50vh;
+    padding-right: 50vh;
+    padding-top: 4vh;
+    font-family:cursive;
+    font-size: 3vh;
+}
+
+h4 {
+    padding-top: 8vh;
+    font-size: 20px;
+}
+
+#contact {
+    text-align: left;
+    padding-left: 50vh;
+    padding-right:50vh;
+    font-family:cursive;
+    height: 70vh;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    font-family:cursive;
+    padding-right: 7vh;
+    column-gap: 40px;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 48px auto;
+}
+
+.row2 p {
+    margin: 0;
+}
+
+#contact-info {
+    width: 40vh;;
+}
+
+input {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px;
+    height: 5vh;
+    padding: 2vh;
+    width: 35vh;
+}
+
+textarea {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 510px;
+}
+div {
+    padding: 1vh;
+}
+
+#message {
+    padding: 2vh;
+}
+
+#submit {
+    background-color: darkcyan;
+    width: 17vh;
+    height: 6vh;
+    border-radius: 4px;
+    border: 1px;
+    color:white;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: darkcyan;
+    color:black;;
+    bottom: 10vh;
+    width: 100%;
+    padding: 10vh;
+    font-size: larger;
+}
+/* end of contact section*/

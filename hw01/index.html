@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1f79c753f8.js" crossorigin="anonymous"></script>
+    <title>My Portfolio Site</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">About Me</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div> 
+            <img id="profile-pic" src="images/profile.jpg" alt="Profile picture of the author." />
+            <h1>WELCOME TO MY WEBSITE!</h1>
+        </div> 
+    </header>
+    <section id="about">
+        <h2>ABOUT ME</h2>
+        <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan arcu neque.</p>
+        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi 
+            lorem vulputate lorem neque cubilia ac in adipiscing in curae 
+            lobortis tortor primis integer massa adipiscing id nisi accumsan 
+            pellentesque commodo blandit enim arcu non at amet id arcu magna. 
+            Accumsan orci faucibus id eu lorem semper nunc nisi lorem 
+            vulputate lorem neque cubilia.
+        </p>
+    </section>
+    <section id="projects">
+        <h5>PROJECTS</h5>
+        <div class="project-holder">
+            <section class="card">
+                <img src="https://picsum.photos/id/1061/300/200" alt="image description 1" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+            <section class="card">
+                <img src="https://picsum.photos/id/1015/300/200" alt="image description 2" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+            <section class="card">
+                <img src="https://picsum.photos/id/572/300/200" alt="image description 3" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+            <section class="card">
+                <img src="https://picsum.photos/id/573/300/200" alt="image description 4" />
+                <h3>Name of Project</h3>
+                <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
+            </section>
+        </div>
+    </section>
+    <section id="contact">
+        <h4>GET IN TOUCH</h4>
+        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+        <div class="contact-details">
+            <form method="post" action="#">
+                <div class="row">
+                    <input type="text" name="name" id="name" placeholder="Name" aria-label="Your name." />
+                    <input type="email" name="email" id="email" placeholder="Email" aria-label="Your email address." />
+                </div>
+                <div class="row">
+                    <textarea name="message" aria-label="message" id="message" placeholder="Message" rows="4"></textarea>
+                </div>
+                <div class="row">
+                    <input id="submit" aria-label="submit the form" type="submit" value="Send Message">
+                </div>
+            </form>
+            <section id="contact-info">
+                <div class="row2">
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <p>
+                        2500 University Heights Rd. <br />
+                        Asheville, NC 2804 <br />
+                        United States
+                    </p>
+                </div>
+                <div class="row2">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <p>
+                        252-223-3056
+                    </p>
+                </div>
+                <div class="row2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>
+                        dwexler@gmail.com
+                    </p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright Deanna Wexler, 2022.</p>
+    </footer>
+</body>
+</html>
