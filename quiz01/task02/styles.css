@@ -13,8 +13,10 @@ header {
     text-align: center;
 }
 
-main {
-    margin: 15vw;
+main{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    padding: 5vh;;
 }
 
 footer {
@@ -37,8 +39,8 @@ code {
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
+    row-gap: 30px;
+    column-gap: 30px;
 }
 
 .card {
