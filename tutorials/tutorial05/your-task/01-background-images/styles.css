@@ -24,11 +24,11 @@ header {
     justify-content: center; /* horizontal-align text in the center */
     
     
-    /* background-image: url('solar-eclipse.jpg');
+    background-image: url('ice.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
-    background-position-y: center; */
+    background-position-y: center;
 }
 
 section {
@@ -39,11 +39,11 @@ section {
     background-color: black;
     padding-left: 0px;
 
-    /* background-image: url('solar-eclipse-multiples.jpg');
+    background-image: url('bear01.jpg');
     background-repeat: no-repeat;
-    background-position: center right;
-    background-size: contain;
-    background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .text-container {
