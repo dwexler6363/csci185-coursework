@@ -1,9 +1,12 @@
-/* You're welcome to change any of this! */
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    background-image: url('images/bear.webp');
+    min-height: 100vh;
+    background-attachment: fixed;
     margin: 0px; 
     font-family: 'Courier New', monospace;
 }
@@ -11,14 +14,17 @@ body {
 section  {
     padding: 80px;
 }
+
 header {
-    font-size: larger; font-style: italic; 
-    background: #FEAC5E;  /* fallback for old browsers */
-    padding-top: 40px;
-    padding-bottom: 10px;
-    font-size: 30px; color:   #430d49;
-    font-family:'Courier New', monospace;
+    font-family::'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #FEAC5E;
+    font-size: 30px; color: #430d49;
+    border-style: dotted;
+    text-decoration: underline dotted lightpink;
+    border-color: lightseagreen;
+    border-width: thick;
 }
+
 h1{
     @font-face {
         src: url(\Train_One\TrainOne-Regular.ttf);
@@ -28,38 +34,28 @@ h1{
 
 h2 {
     margin-left: -30px;
+    height: 110px;
+    padding-top: 30px;
+    font-weight: bolder;
 }
 
 p, li {
-    line-height: 2em;
-    margin-bottom: auto;
+    line-height: 1em;
 }
 
 ul {
+    border-style: dotted;
+    border-color: lightseagreen;
+    border-width: thick;
     background-color:#ffffff; 
     font-style: normal; color: #430d49;
     opacity: .9;
     margin-left: 30px;
     padding-left: 30px;
   }
-#tutorials {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 30px; color:  #580766;
-}
 
-#homework {
-    padding-top: 20px;
-    padding-bottom: 20px;
+#tutorials, #homework, #inspiration {
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 30px; color:  #580766;
-}
-#inspiration {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 30px; color:   #580766;
-}
-
-body {
-    background-image: url('images/bear.webp');
-    min-height: 100vh;
 }
