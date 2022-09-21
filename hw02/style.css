@@ -81,35 +81,92 @@ footer {
 
 /***************************/
 /* Part A: Left Navigation */
-/***************************/
+/**************************/
+h1{
+    padding: 5px;
+}
+.fa-spotify{
+    font-size: 40px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
 
-/* Your Code Here */
-
-
-
+aside a i{
+    margin: 13px;
+    padding-left: 30px;
+}
 /********************************/
 /* Part B: Header & Nav Styling */
-/********************************/
+header {
+    display: block;
+    float: right;
+    margin: 15px;
+    padding: 15px;
+    padding-top: 30px;
+    font-size: small;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
 
-/* Your Code Here */
+#upgrade{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 30px; 
+    margin-right: 15px;
+}
 
+#profile{
+    background-color: rgb(40, 43, 43);
+    border-radius: 20px;
+    padding: 10px 30px;
+}
 
+nav {
+    display: grid;
+    grid-template-columns: auto auto auto 70vh;
+    margin-left: 45px;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    font-size: small;
+    letter-spacing: 2px;
+    font-weight: bold;
 
-
+}
 
 /*************************/
 /* Part C: Artists Panel */
 /*************************/
+#featured-content {
+    display: grid;
+    grid-template-columns: repeat(5, 230px);
+    grid-template-rows: repeat(2, 20vh);
+    row-gap: 200px;
+    column-gap: 20px;
+    padding: 20px;
+}
 
-/* Your Code Here.
-   For the desktop view, there should be 5 cards per row.
-*/
+section div{
+    background-color:  rgb(40, 43, 43);
+    border-radius: 3%;
+    padding-bottom: 10px;
+}
 
+.artist-card{
+    text-align: center;
+}
 
+.card-footer {
+    padding-left: 25px;
+    text-align: left;
+    font-size: small;
+}
 
-
-
-
+img{
+    border-radius: 50%;
+    max-width: 25vh;
+    max-height: 25vh;
+    padding-top: 20px;
+}
 /**************************/
 /* Part D: Responsive UIs */
 /**************************/
