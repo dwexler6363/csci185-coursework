@@ -174,14 +174,16 @@ img{
 /* Your Code Here */
 
 @media screen and (max-width: 1000px) {
-    /* 
-        Tablet Display: 3 cards per row!
-    
-    */
+    body{
+        
+    }
 }
 
 
 @media screen and (max-width: 700px) {
+      body{
+
+      }  
     /* Mobile Display 
         * 2 cards per row
         * The aside panel and "Upgrade" button should no longer be visible.
