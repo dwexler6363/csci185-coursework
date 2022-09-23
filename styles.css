@@ -39,6 +39,11 @@ h2 {
     font-weight: bolder;
 }
 
+h3, h4{
+    font-style: ;text-decoration: underline;
+    font-weight: bold;
+}
+
 p, li {
     line-height: 1em;
 }
