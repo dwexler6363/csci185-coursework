@@ -1,7 +1,7 @@
 //The data:
-const firstName = "Jane";
+const firstName = "DeeDee";
 const pic = "http://knight.gamebanana.com/img/ico/sprays/patrick_star_preview_2.png"; 
-const score = 300;
+const score = 350;
 
 console.log(firstName);
 console.log(pic);
