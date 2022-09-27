@@ -2,7 +2,7 @@ function setup() {
     const canvasWidth = window.innerWidth;
     const canvasHeight = window.innerHeight; 
     createCanvas(canvasWidth, canvasHeight);
-    background("pink");
+    background("lightblue");
 
 
     // add your drawing here:
@@ -13,8 +13,8 @@ function setup() {
     // text("Here is some text", 200, 40);
 
     // https://p5js.org/reference/#/p5/circle
-    // fill('red');
-    // circle(550, 100, 100);
+    // fill('pink');
+    // circle(800, 350, 600);
 
     // https://p5js.org/reference/#/p5/ellipse
     // fill('teal');
@@ -26,7 +26,20 @@ function setup() {
     // Rectangle: https://p5js.org/reference/#/p5/rect
     // Curve: https://p5js.org/reference/#/p5/curve
 
+    drawSmiley(500); //invoke draw smiley
+    drawSmiley(300, 70, 300);
+    drawSmiley(500, 500, 40)
 
     // for debugging:
     drawGrid(canvasWidth, canvasHeight)
 }
+
+function drawSmiley(x, y, diameter) {
+    fill('yellow');
+    circle(x, y, diameter); // x, y, diameter
+}
+
+function mouseClicked() {
+    drawSmiley(mouseX, mouseY, MAth.random() * 300);
+}
+
