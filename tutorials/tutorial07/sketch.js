@@ -23,9 +23,9 @@ function setup() {
 
     // Exercise 4:
     drawFace();
-    drawFace(100, 400, 50);
+    drawFace(100, 400, 50, 'pink');
     drawFace(200, 400, 100);
-    drawFace(300, 400, 50);
+    drawFace(300, 400, 50, 'pink');
     drawFace(400, 400, 100);
 
     drawGrid(canvasWidth, canvasHeight);
@@ -63,10 +63,33 @@ function drawBullseye(centerX, centerY, size, fillColor1='teal', fillColor2='nav
 
 // modify this function so that it accepts and honors
 // the following 3 parameters: centerX, centerY, and size
-function drawFace(centerX, centerY, size, fillcolor='yellow') {
-    fill(fillcolor);
+function drawFace(centerX, centerY, size, faceColor='yellow') {
+    fill(faceColor);
     circle(centerX, centerY, size); //100,400,50
     fill('black');
-    circle(92, 392, 8);
-    circle(108, 392, 8);
+    let sf = size / 6;
+    circle(centerX - sf, centerY - sf, sf); // left eye
+    circle(centerX + sf, centerY - sf, sf); // right eye
+
+    //make a mouth:
+    strokeWeight(size / 25);
+    // line(
+    //      centerX - sf*2, // x1
+    //      centerY + sf, // v1
+    //      centerX + sf*2, // x2
+    //      cebterY + sf // y2
+    // ) //x1 y1 x2 y2
+
+    noFill()
+    stroke ('black');
+    curve(
+        centerX + sf*2, centerY - 1.5*size, // control point
+        centerX + sf*2, centerY + .3*sf, // start point
+        centerX - sf*2, centerY + .3*sf, // end point
+        centerX - sf*2, centerY - 1.5*size // control point
+    )
+    strokeWeight(1)    
+
+   // arc(100, 100, 100, 200, -1, -.5, OPEN)   
+   // x, y, wodth, height, start, OPEN      
 }
