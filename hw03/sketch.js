@@ -9,16 +9,17 @@ function setup() {
     
     // drawCreature(92, 115, 85, '#5e6976', '#1b324d');
     // drawCreature(487, 110, 101, '#bfdc65', '#abb880');
-    // drawCreature(454, 423, 141, '#aebb83', '#227876');
+    //drawCreature(454, 423, 141, '#aebb83', '#227876');
     // drawCreature(333, 227, 99, '#94ba77', '#3f5364');
     // drawCreature(117, 314, 91, '#648d8e', '#afc272');
 
-drawCreature(200, 400, 200);   
+drawCreature(200, 400, 200,);  
+
 drawGrid(canvasWidth, canvasHeight);
 }
 
 // define your drawCreature function here:
-function drawCreature (centerX, centerY, size, faceColor='white'){
+function drawCreature(centerX, centerY, size, faceColor='white'){
 
     beginShape(); //right horn *****
     fill('brown');
@@ -63,6 +64,7 @@ function drawCreature (centerX, centerY, size, faceColor='white'){
     line(50, 390, 350, 390);
 
     let sf = size / 6;
+
     strokeWeight(1.5);
     stroke('black');
     fill ('black');
@@ -71,7 +73,7 @@ function drawCreature (centerX, centerY, size, faceColor='white'){
     strokeWeight(5);
     stroke('black');
     fill (faceColor)
-    circle (centerX, centerY, size-6) // main head *****
+    circle (centerX - sf+33 , centerY - sf+33, size-6) // main head *****
 
     strokeWeight(1.5);
     stroke('black');
@@ -91,22 +93,18 @@ function drawCreature (centerX, centerY, size, faceColor='white'){
     strokeWeight(1);
     stroke('black');
     fill ('white');
-    circle(centerX - sf*1.6, centerY - sf+45, sf/3.2); // left eye glow *****
-    circle(centerX + sf*1.6, centerY - sf+45, sf/3.2); // right eye glow *****
+    circle(centerX - sf*1.6, centerY - sf+45, sf/4); // left eye glow *****
+    circle(centerX + sf*1.6, centerY - sf+45, sf/4); // right eye glow *****
 
     strokeWeight(4); // nose *****
     stroke('black');
     fill('pink');
-    ellipse(200, 466, 145, 61); // nose // x, y, sizex, sizey
-
+    ellipse(centerX - sf+33.5, centerY - sf+99, sf+112, sf+28); // nose // x, y, sizex, sizey
     strokeWeight(2);
     stroke('red');
     fill ('purple');
     circle(centerX - sf*.9, centerY - sf+100, sf/2.2); // left nostril *****
     circle(centerX + sf*.9, centerY - sf+100, sf/2.2); // right nostril ******
-
-
-
 }
 
 
