@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    background-color: #222;
+    background: radial-gradient(circle, rgb(50, 2, 117), rgb(23, 3, 3));
 }
 main {
     height: 100vh;
