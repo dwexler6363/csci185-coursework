@@ -1,7 +1,6 @@
 const canvasWidth = window.innerWidth;
 const canvasHeight = window.innerHeight; 
 
-let color = 'white';
 const bubbles = [];
 let x = canvasWidth / 2;
 let y = canvasHeight / 2 - 50;
@@ -51,7 +50,7 @@ function moveController(ev) {
     } else if (ev.code == 'ArrowRight') {
         console.log('right arrow!');
         x += 5;
-    } else if (ev.code == 'Space') {
+    } else if (ev.code == 'space') {
         shoot();
     }
     

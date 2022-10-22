@@ -1,11 +1,13 @@
 body {
     margin: 0px;
+    background: radial-gradient(circle, rgb(91, 96, 239), rgb(23, 3, 3));
 }
 main {
-    height: 80vh;
+    height: 78vh;
 }
 
 footer{
+    color: aliceblue;
     padding-left: 10vh;
     padding-bottom: 5vh;
     font-size: larger;

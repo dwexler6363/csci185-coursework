@@ -9,7 +9,6 @@ let y = canvasHeight / 2 - 50;
 let doJump = false;
 let counter = 0;
 let initialY = y;
-
     
 function setup() {
     createCanvas(canvasWidth, canvasHeight);
@@ -21,21 +20,21 @@ function moveController(ev) {
     console.log(ev.code);
     if (ev.code == 'ArrowUp') {
         console.log('up arrow!');
-        y -= 4;
+        y -= 5;
     } else if (ev.code == 'ArrowDown') {
         console.log('down arrow!');
-        y += 4;
+        y += 5;
     } else if (ev.code == 'ArrowLeft') {
         console.log('left arrow!');
-        x -= 4;
+        x -= 5;
     } else if (ev.code == 'ArrowRight') {
         console.log('right arrow!');
-        x += 4;
+        x += 5;
     } else if (ev.code == 'KeyG') {
-        size += 3;
+        size += 5;
     } else if (ev.code == 'KeyS') {
-        size -= 3;
-    }
+        size -= 5;
+    } 
 
     clear();
     noFill();
@@ -43,7 +42,8 @@ function moveController(ev) {
 }
 
 document.addEventListener('keydown', moveController)
-/////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+
 
 // JUMP
 function draw() {
@@ -52,7 +52,7 @@ function draw() {
     if (doJump) {
         // animate for one Math.sin cycle, then 
         // turn doJump variable to false
-        const jumpHeight = -10;
+        const jumpHeight = -20;
         const jumpSpeed = 6;
         y += jumpHeight * Math.sin(counter / jumpSpeed); 
         counter++;
@@ -74,10 +74,6 @@ function jump(ev) {
 
 document.addEventListener('keydown', jump);
 ///////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 //function displayMessage() {
     //fill('black');
