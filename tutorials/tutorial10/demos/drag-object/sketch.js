@@ -21,7 +21,7 @@ function draw() {
     clear();
     fill(data.color);
     circle(data.x, data.y, data.d);
-    circle(data1.x, data1.y, data1.d);
+    // circle(data1.x, data1.y, data1.d);
 }
 
 function mouseDragged() {
@@ -31,9 +31,9 @@ function mouseDragged() {
         if (distance < data.d/2) { 
             console.log("first circle"); 
             activeShape = data; 
-        } else {
-            console.log("second circle");
-            activeShape = data1;
+        } //else {
+          //  console.log("second circle");
+           // activeShape = data1;
         }
 
     // moving thecorrect shape:
@@ -42,7 +42,6 @@ function mouseDragged() {
     // let d = dist(data.x, data.y, mouseX, mouseY);
     //if (d < data.d/2 || data.color == 'teal') {
     // data.color = 'teal';  
-}
 
 function mouseReleased() {
     data.color = 'white';

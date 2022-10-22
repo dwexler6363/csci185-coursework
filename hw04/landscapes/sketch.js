@@ -32,7 +32,7 @@ function draw() {
        i++;
     }
     i = 0;
-    while (i < 100) {
+    while (i < 200) {
         const data = stars[i];
         if (data.color == 'black'){
             data.color = 'white';
