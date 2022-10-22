@@ -176,3 +176,4 @@ function drawCreature(centerX, centerY, size, fillColor1='brown', fillColor2='na
     circle(centerX - sf*.9, centerY + 2*sf, sf/2.2); // left nostril *****
     circle(centerX + sf*.9, centerY + 2*sf, sf/2.2); // right nostril ******
 }
+
