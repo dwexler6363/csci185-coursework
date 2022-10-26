@@ -50,7 +50,7 @@ function moveController(ev) {
     } else if (ev.code == 'ArrowRight') {
         console.log('right arrow!');
         x += 5;
-    } else if (ev.code == 'space') {
+    } else if (ev.code == 'Space') {
         shoot();
     }
     
