@@ -3,15 +3,15 @@ const canvasHeight = window.innerHeight;
 
 const player = { x: canvasWidth/2, y: canvasHeight/2, d: 200, color: 'hotpink', originalColor: 'hotpink' };
 const circleData = [
-    {x: 600, y: 60, d: 15, speedX: 3, speedY: 3, color: 'white'},
-    {x: 500, y: 50, d: 15, speedX: 3, speedY: 3, color: 'white'},
+    {x: 600, y: 60, d: 15, speedX: 2, speedY: 2, color: 'white'},
+    {x: 500, y: 50, d: 15, speedX: 2, speedY: 2, color: 'white'},
     {x: 300, y: 150, d: 15, speedX: 2, speedY: 0, color: 'white'},
     {x: 400, y: 400, d: 20, speedX: 3, speedY: 1, color: 'white'},
     {x: 40, y: 520, d: 20, speedX: 2, speedY: 0, color: 'white'},
     {x: 140, y: 120, d: 15, speedX: 3, speedY: -0.5, color: 'white'},
     {x: 350, y: 350, d: 20, speedX: 1, speedY: 1, color: 'white'},
     {x: 340, y: 60, d: 15, speedX: 3, speedY: 3, color: 'white'},
-    {x: 550, y: 50, d: 20, speedX: 3, speedY: 3, color: 'white'},
+    {x: 550, y: 50, d: 20, speedX: 2, speedY: 2, color: 'white'},
     {x: 330, y: 150, d: 15, speedX: 2, speedY: 0, color: 'white'},
     {x: 460, y: 400, d: 20, speedX: 3, speedY: 1, color: 'white'},
     {x: 80, y: 550, d: 15, speedX: 2, speedY: 0, color: 'white'},
