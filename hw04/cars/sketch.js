@@ -41,6 +41,7 @@ const c5 = {
 // required to set up the canvas:
 async function setup() {
     createCanvas(canvasWidth, canvasHeight);
+    c1.x = 0;
 }
 
 
@@ -48,12 +49,11 @@ async function setup() {
 function draw() {  
      // clear the canvas:
     clear();
-
     // move the car: //??????????
    c1.x += c1.speed;
    if (c1.x < 10) {
-    c1.x = 0;
    }
+
     c2.x -= c2.speed;
     c3.x += c3.speed;
     c4.x -= c4.speed;

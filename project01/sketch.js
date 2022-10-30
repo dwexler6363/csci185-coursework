@@ -22,13 +22,19 @@ const circleData = [
 const stars = []; 
 const bubbles = [];
 
-let size = 250;
+let size = 240;
 let x = canvasWidth / 2;
 let y = canvasHeight / 2 -50;
 
 let doJump = false;
 let counter = 0;
 let initialY = y;
+
+const earth = [
+    {x: 400, y: 280, d: 80, speed: 15 },
+    { x: 100, y: 95, d: 80, speed: 15 },
+]
+
     
 function setup() {
     createCanvas(canvasWidth, canvasHeight);
@@ -64,9 +70,9 @@ function drawstars1() {
         const data = stars[i];
         if (data.color == 'purple'){
             data.color = 'white';
-        } else {
+        } // else {
             data.color = 'purple';
-        }
+       // }
         fill (data.color)
        circle(data.x, data.y, data.w);
        i++;
@@ -171,41 +177,67 @@ function mouseDragged() {
   player.x = mouseX;
   player.y = mouseY
 }
+///////////////////////////////////////////////////////////////////////////////////////////
+function jump(ev) {
+    if (ev.code == 'Space') {
+        doJump = true;
+    }
+    
+}
+document.addEventListener('keydown', jump);
 ///////////////////////////////////////////////////////////////////////////////////
 //shoot
 function shoot() {
     const bubble = {
-        x: x,
-        y: y - 25,
-        d: 12,
-        speed: 10
+        x: player.x,
+        y: player.y - 25,
+        d: 20,
+        speed: 15
     }
+
     bubbles.push(bubble)
 }
 
 function drawbb() {
     strokeWeight(0);
     fill ('hotpink');
+    strokeWeight(2);
+        stroke('pink');
     // 2. loop through the bubbles list and draw / animate each bubble:
     for (const bubble of bubbles) {
-        circle(bubble.x, bubble.y, bubble.d);
+        square(bubble.x, bubble.y, bubble.d);
         bubble.y -= bubble.speed;
     }
+
 }
 
 document.addEventListener('keydown', moveController);
+
+//////////////////////////////////////////////////////////////////////  
+    // mini white space cows: 
+function drawcows() {
+    drawCreature(earth[1].x, earth[1].y, earth[1].d);
+    earth[1].y += 4 * Math.cos(counter / 10);
+    earth[1].x += 4;
+
+    // loop cow back to the beginning if it gets to the end:
+    if (earth[1].x > canvasWidth + 80) {
+       earth[1].x = -100;
+    }
+    counter++;
+}
+
 ////////////////////////////////////////////////////////////////////////////////////
-// JUMP
 function draw() {
     clear();
     drawballs();
     drawstars1();
     drawbb();
+    drawcows();
+
     if (doJump) {
-        // animate for one Math.sin cycle, then 
-        // turn doJump variable to false
-        const jumpHeight = -20;
-        const jumpSpeed = 6;
+        const jumpHeight = -10;
+        const jumpSpeed = 20;
         player.y += jumpHeight * Math.sin(counter / jumpSpeed); 
         counter++;
         if (player.y < initialY) {
@@ -219,25 +251,7 @@ function draw() {
 
 }
 
-function jump(ev) {
-    console.log(ev.code);
-    if (ev.code == 'Space') {
-        doJump = true;
-    }
-}
-
-document.addEventListener('keydown', jump);
-///////////////////////////////////////////////////////////////////////////
-
-//function displayMessage() {
-    //fill('black');
-     //textAlign(CENTER);
-     //textSize(40);
-    //text("Hold the spacebar to jump.", canvasWidth/2, canvasHeight/1.2);
-    // text("Press S key to shrink cow and G key to grow cow.", canvasWidth/2, canvasHeight/1.3);
-    // text("Pess arrow keys to move up, down, and side to side.", canvasWidth/2, canvasHeight/1.4);
-
-
+///////////////////////////////////////////////////////////////////////////////////////////
 // replace this function with YOUR creature!
 function drawCreature(centerX, centerY, size, fillColor1='brown', fillColor2='navy', fillColor3='white'){
 
