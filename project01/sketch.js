@@ -2,6 +2,7 @@ const canvasWidth = window.innerWidth;
 const canvasHeight = window.innerHeight; 
 
 const player = { x: canvasWidth/2, y: canvasHeight/2, d: 200, color: 'hotpink', originalColor: 'hotpink' };
+
 const circleData = [
     {x: 600, y: 60, d: 15, speedX: 2, speedY: 2, color: 'white'},
     {x: 500, y: 50, d: 15, speedX: 2, speedY: 2, color: 'white'},
