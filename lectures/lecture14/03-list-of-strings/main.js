@@ -12,6 +12,7 @@ while (i < 12) {
     outputElement.innerHTML += `<p>Welcome, ${names[i]}!</p>`;
     ++i;
 }
+
 // outputElement.innerHTML += `<p>Welcome, ${names[1]}!</p>`;
 // outputElement.innerHTML += `<p>Welcome, ${names[2]}!</p>`;
 // outputElement.innerHTML += `<p>Welcome, ${names[3]}!</p>`;

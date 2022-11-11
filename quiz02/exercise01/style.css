@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, header > div, main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+header {
+    flex-direction: column;
+}
+header > div {
+    width: 200px;
+    justify-content: space-between;
+}
+
+.card {
+    width: 275px;
+    display: flex;
+    border: solid 1px #000;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.fox {
+    background-image: url('images/fox.jpg');
+    background-size: 270px;
+
+} 
+
+.lion {
+    background-image: url('images/lion.jpg');
+    background-size: 270px;
+}
+
+.tiger{
+    background-image: url('images/tiger.png');
+    background-size: 270px;
+}
+
+.zebra {
+    background-image: url('images/zebra.jpg');
+    background-size: 270px;
+}

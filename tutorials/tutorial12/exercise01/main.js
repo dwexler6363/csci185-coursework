@@ -21,3 +21,4 @@ function makeOrange() {
     console.log('Change the box\'s background color to orange');
     document.querySelector("#box").style.backgroundColor = "orange"; 
 }
+

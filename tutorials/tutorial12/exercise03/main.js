@@ -1,4 +1,4 @@
-const restaurants = [
+let restaurants = [
     "Suwana's Thai Orchid", 
     "Khao Thai Cuisine", 
     "Little Bee Thai", 
