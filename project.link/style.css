@@ -49,7 +49,7 @@ body {
     }
       
       .hero-image {
-        background-image: url("/images/farm.jpg");
+        background-image: url("../images/farm.jpg");
         height: 100vh;
         background-position: center;
         background-repeat: no-repeat;
