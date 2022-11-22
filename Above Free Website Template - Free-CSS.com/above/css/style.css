@@ -70,12 +70,12 @@ body{
 	
 }
 .top-menu ul li a:hover {
-	color: #b64deffa;
+	color: #967de5;
 	
 	
 }
 .top-menu ul li a.active {
-	color: #b64deffa;
+	color: #967de5;
 	font-weight: 600;
 }
 nav a {
@@ -167,7 +167,7 @@ nav a:focus {
 }
 .banner_center h2 span
 {
-	color:  #b64deffa;
+	color:  #967de5;
 	font-weight: 900;
 }
 .wmuSliderPagination {
@@ -195,8 +195,8 @@ ul.wmuSliderPagination {
 	-webkit-border-radius: 50%;
 }
 .wmuSliderPagination a.wmuActive {
-	background: #b64deffa;
-	border-color:  #b64deffa;
+	background: #967de5;
+	border-color:  #967de5;
 }
 
 .bannertop_box{
@@ -259,13 +259,16 @@ ul.wmuSliderPagination {
 	width: 85%;
 	margin: 0 auto;
 }
+
+
+
+
 .works-header h3
 {
 	font-size: 2.5em;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	font-weight: 400;
-	color:  #b64deffa;
 }
 .works-header p{
 	line-height: 1.5em;
@@ -562,7 +565,7 @@ div#portfoliolist {
 	padding: 0em 0 0em;
 }
 .tab_box{
-	background: #b64deffa;
+	background: #967de5;
 	padding: 2em;
 }
 .top1{
@@ -594,19 +597,22 @@ text-align:right;
 }
 .resp-tab-active,.resp-tab-item:hover{
   text-shadow: none;
-  color: #b64deffa;
+  color: #000000;
 }
 
 #about .container{
-	padding-top: 10vh;
+	padding-top: 5vh;
+
 	background-color:rgba(0, 0, 0, 0.8);
-	height:85vh;
+	height:73vh;
 }
 
-.resp-tabs-container {
+.content .container {
 	padding: 5px;
 	clear: left;
 	
+	background-color:rgba(0, 0, 0, 0.8);
+	height: 130vh;
 }
 h2.resp-accordion {
 	cursor: pointer;
@@ -651,7 +657,7 @@ h2.resp-accordion {
 	color: #ffffff;
 }
 .about-header h3 span {
-	color: #b64deffa;;
+	color: #967de5;;
 
 }
 .about-imag {
@@ -661,7 +667,7 @@ h2.resp-accordion {
 .about-imag img {
 	border: 4px solid  #fffffffa;
 	border-radius: 5vh;
-	width: 90%;
+	width: 80%;
 }
 .about-text {
 	margin-top: 12vh;
@@ -692,7 +698,7 @@ h2.resp-accordion {
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	font-weight: 400;
-	color:  #b64deffa;
+	color:  #967de5;
 }
 .contact-header h3 span {
 color: #fefefe;
@@ -1575,7 +1581,7 @@ padding-bottom: 8em;
 #about {
 	height: 100vh;
 	background-color: #2a404e;
-	background: url("../images/background.jpg") no-repeat center top;
+	background: url("../images/sunflower.jpg") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1587,18 +1593,37 @@ padding-bottom: 8em;
 
 #work {
 	height: 180vh;
-
-	background-color: #000000;
+	background-color: #2a404e;
+	background: url("../images/tooohot2.jpg") no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 #services {
 	height: 180vh;
-
-	background-color: #4c6777;
+	background-color: #2a404e;
+	background: url("../images/tooohot.jpg") no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 #contact {
-	background-color: #305f7c;
+	background-color: #2a404e;
+	background: url("../images/cat.jpg") no-repeat center top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 
