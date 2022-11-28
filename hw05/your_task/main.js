@@ -28,7 +28,7 @@ document.querySelector('#tracks').innerHTML = "";
     for (let i = 0; i < 5; i++) {
         const template = `
             <section class="track-item preview" onclick="playsong('${data[i].id}')">
-            <img src="${data[i].album.image_url}">
+            <img alt="this is an album cover for ${data[i].name}" src="${data[i].album.image_url}">
             <i class="fas fa-play play-track" aria-hidden="true"></i>
             <div class="label">
                 <h2>${data[i].name}</h2>
@@ -84,7 +84,7 @@ console.log(data[0].image_url);
 
 const template = `
 <section class="artist-card" >
-    <img src="${data[0].image_url}" />
+    <img alt="photo of ${data[0].name}" src="${data[0].image_url}" />
     <h2>${data[0].name}</h2>
     <p>Popularity: ${data[0].popularity}</p>
 <section>
