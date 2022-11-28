@@ -33,7 +33,7 @@
 #swipebox-slider .slide {
   background: url(../images/loader.gif) no-repeat center center;
   height: 100%;
-  line-height: 1px;
+  line-height: 2px;
   text-align: center;
   width: 100%;
   display: inline-block;
@@ -216,8 +216,8 @@
 
 #swipebox-caption {
   color: white!important;
-  font-size: 15px;
-  line-height: 43px;
+  font-size: 28px;
+  line-height: 50px;
   font-family: Helvetica, Arial, sans-serif;
 }
  @media screen and (max-width:640px){

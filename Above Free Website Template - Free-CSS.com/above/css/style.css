@@ -62,11 +62,11 @@ body{
 	display: inline-block;
 }
 .top-menu ul li a{
-	font-size: 1.1em;
+	font-size: 1.5em;
 	color: #fff;
 	text-decoration: none;
 	text-transform: uppercase;
-	padding: 20px;
+	padding: 25px;
 	
 }
 .top-menu ul li a:hover {
@@ -84,7 +84,7 @@ nav a {
 	outline: none;
 	color: #fff;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 	font-weight: 400;
 	text-shadow: 0 0 1px rgba(255,255,255,0.3);
 	font-size: 1.35em;
@@ -152,23 +152,54 @@ nav a:focus {
 .banner_center {
 	width: 50%;
 	position: absolute;
-	top: 40%;
+	top: 35%;
 	left: 25%;
 	text-align: center;
 	}
 
+	.banner_center02 {
+		width: 50%;
+		position: absolute;
+		top: 35%;
+		left: 25%;
+		text-align: center;
+		}
+
+		.banner_center03 {
+			width: 50%;
+			position: absolute;
+			top: 35%;
+			left: 25%;
+			text-align: center;
+			}
 
 .banner_center h2 {
+			color: #eee;
+			font-family: 'Arvo', serif;
+			text-transform: uppercase;
+			font-size: 2.2em;
+			padding:7px 0;}
+
+.banner_center02 h2 {
 	color: #eee;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
-	font-size: 2.4em;
+	font-size: 2.2em;
 	padding:7px 0;
 }
+
+.banner_center03 h2 {
+	color: #eee;
+	font-family: 'Arvo', serif;
+	text-transform: uppercase;
+	font-size: 2.2em;
+	padding:7px 0;
+}
+
 .banner_center h2 span
 {
-	color:  #967de5;
-	font-weight: 900;
+	color:  #ffffff;
+	font-weight: 800;
 }
 .wmuSliderPagination {
 	z-index: 2;
@@ -265,15 +296,15 @@ ul.wmuSliderPagination {
 
 .works-header h3
 {
-	font-size: 2.5em;
+	font-size: 3em;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 800;
 }
 .works-header p{
 	line-height: 1.5em;
 	
-	font-size: 15px;
+	font-size: 20px;
 	color: #fefefe;
 	padding: 25px 0;
 }
@@ -542,11 +573,12 @@ ul.wmuSliderPagination {
 	display:none;
 	float:left;
 	overflow:hidden;
-	margin: 0px 1% 2% 0;
+	margin: 0px 1% 3% 0;
 }
 div#portfoliolist {
-	padding: 20px 20px 0 20px;
+	padding: 20px 20px 20px 20px;
 	background-size: 100% 100%;
+	padding-bottom: 5%;
 }	
 .portfolio-wrapper {
 	overflow:hidden;
@@ -578,11 +610,11 @@ text-align:right;
     padding: 0;
 }
 .resp-tab-item{
-      padding: 7px 10px;
+    padding: 6px 10px;
     text-decoration: none;
     color: #fff;
-     font-size: 1.1em;
-    font-weight: 400;
+     font-size: 1.3em;
+    font-weight: 500;
       margin: 0 0.3em;
 	cursor: pointer;
 	display: inline-block;
@@ -597,22 +629,18 @@ text-align:right;
 }
 .resp-tab-active,.resp-tab-item:hover{
   text-shadow: none;
-  color: #000000;
+  color: rgb(141, 150, 154);
 }
 
 #about .container{
-	padding-top: 5vh;
-
+	padding-top: 9vh;
 	background-color:rgba(0, 0, 0, 0.8);
-	height:73vh;
+	height:78vh;
 }
 
 .content .container {
-	padding: 5px;
 	clear: left;
-	
 	background-color:rgba(0, 0, 0, 0.8);
-	height: 130vh;
 }
 h2.resp-accordion {
 	cursor: pointer;
@@ -628,7 +656,6 @@ h2.resp-accordion {
 
 .img-top {
     margin: 3px 0 24px 0;
-    position: relative;
     padding: 0px 7px !important;
 }
 .img-top img {
@@ -650,10 +677,11 @@ h2.resp-accordion {
 
 }
 .about-header h3 {
-	font-size: 2.5em;
+	font-size: 3.5em;
+
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 800;
 	color: #ffffff;
 }
 .about-header h3 span {
@@ -665,18 +693,18 @@ h2.resp-accordion {
 	width:38%;
 }
 .about-imag img {
-	border: 4px solid  #fffffffa;
+	border: 3px solid  #fffffffa;
 	border-radius: 5vh;
 	width: 80%;
 }
 .about-text {
-	margin-top: 12vh;
+	margin-top: 5vh;
 	float: right;
 	width: 60%;
 }
 .about-text p {
 	text-align: left;
-	font-size: 15px;
+	font-size: 16px;
 	color: #ffffff;
 	line-height: 1.5em;
 }
@@ -694,7 +722,7 @@ h2.resp-accordion {
 ;
 }
 .contact-header h3 {
-	font-size: 2.5em;
+	font-size: 3em;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -705,7 +733,7 @@ color: #fefefe;
 }
 .contact-header p {
 	line-height: 1.5em;
-	font-size: 15px;
+	font-size: 20px;
 	color: #fefefe;
 	padding: 25px 0;
 }
@@ -788,12 +816,16 @@ padding-bottom: 8em;
 	outline: none;
 	border: none;
 	border-bottom: 1px solid#d5d6d7;
-	font-size: 15px;
-	color: #d5d6d7;
+	font-size: 20px;
+	color: #967de5;
 	text-transform: capitalize;
 	padding: 10px 0;
 }
 
+.contact .clearfix {
+	background-color:rgba(0, 0, 0, 0.6);
+	height: 45vh;
+}
 .contactgrid1 textarea  {
 	width: 110%;
 	background: none;
@@ -801,8 +833,8 @@ padding-bottom: 8em;
 	border: none;
 	resize: none;
 	border-bottom: 1px solid#d5d6d7;
-	font-size: 15px;
-	color: #d5d6d7;
+	font-size: 20px;
+	color: #967de5;
 	text-transform: capitalize;
 	padding: 10px 0;
 	height: 2.8em;
@@ -1579,8 +1611,7 @@ padding-bottom: 8em;
 		}
 
 #about {
-	height: 100vh;
-	background-color: #2a404e;
+	height: 120vh;
 	background: url("../images/sunflower.jpg") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -1593,7 +1624,6 @@ padding-bottom: 8em;
 
 #work {
 	height: 180vh;
-	background-color: #2a404e;
 	background: url("../images/tooohot2.jpg") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -1603,20 +1633,8 @@ padding-bottom: 8em;
 	background-attachment: fixed;
 }
 
-#services {
-	height: 180vh;
-	background-color: #2a404e;
-	background: url("../images/tooohot.jpg") no-repeat center top;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-}
 
 #contact {
-	background-color: #2a404e;
 	background: url("../images/cat.jpg") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
