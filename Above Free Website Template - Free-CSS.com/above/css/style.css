@@ -17,6 +17,18 @@ input[type="button"]{
 	-ms-transition:0.5s all;
 }
 
+.tab_img {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.col-md-3 img-top grid_box {
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
 h1,h2,h4,h5,h6{
 	padding:0 0;
 	margin:0 0;
@@ -128,7 +140,7 @@ nav a:focus {
 
 /***** Slider *****/
 .banner-wrap {
-	padding-top: 30em;
+	padding-top: 25em;
 }
 .wmuSlider {
 	position: relative;
@@ -280,7 +292,7 @@ ul.wmuSliderPagination {
 	text-align: center;
 }
 .works-section{
-	padding:3em 0;
+	padding:2em 0;
 	background:#5d7fa2;
 
 	
@@ -296,17 +308,18 @@ ul.wmuSliderPagination {
 
 .works-header h3
 {
-	font-size: 3em;
+	font-size: 4em;
 	font-family: 'Arvo', serif;
 	text-transform: uppercase;
 	font-weight: 800;
 }
 .works-header p{
-	line-height: 1.5em;
+	line-height: 1.2em;
 	
-	font-size: 20px;
+	font-size: 21px;
 	color: #fefefe;
-	padding: 25px 0;
+	padding-top: 0px;
+	padding-bottom: 30px;
 }
 .portfolio-section{
 	background:#FFD670;
@@ -326,7 +339,7 @@ ul.wmuSliderPagination {
 	color:#FFF0CA;
 	font-weight:300;
 	font-size:1.2em;
-	margin-top: 1.35em;
+	margin-top: 1.30em;
 	text-transform: uppercase;
 }
 .portfolio-section-head label {
@@ -598,7 +611,7 @@ div#portfoliolist {
 }
 .tab_box{
 	background: #967de5;
-	padding: 2em;
+	padding: 1em;
 }
 .top1{
 	margin-top: 2%;
@@ -655,9 +668,10 @@ h2.resp-accordion {
 }
 
 .img-top {
-    margin: 3px 0 24px 0;
+    margin: 3px 0 22px 0;
     padding: 0px 7px !important;
 }
+
 .img-top img {
     width: 100%;
 }
@@ -665,7 +679,6 @@ h2.resp-accordion {
 	padding-top: 15px;
 	text-align: center;
 }
-
 
 .about-section {
 	padding:3em 0;
@@ -698,15 +711,17 @@ h2.resp-accordion {
 	width: 80%;
 }
 .about-text {
-	margin-top: 5vh;
+	margin-top: 0vh;
 	float: right;
 	width: 60%;
+	padding-right: 55px;
 }
+
 .about-text p {
 	text-align: left;
-	font-size: 16px;
+	font-size: 18px;
 	color: #ffffff;
-	line-height: 1.5em;
+	line-height: 1.6em;
 }
 
 .footer-section {
@@ -1624,7 +1639,7 @@ padding-bottom: 8em;
 
 #work {
 	height: 180vh;
-	background: url("../images/tooohot2.jpg") no-repeat center top;
+	background: url("../images/moving\ tooohot.gif") no-repeat center top;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

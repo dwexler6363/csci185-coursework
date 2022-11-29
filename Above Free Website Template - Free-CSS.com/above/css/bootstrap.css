@@ -312,15 +312,14 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  display: block;
+  display: flex;
   max-width: 100%;
-  height: auto;
 }
 .img-rounded {
   border-radius: 6px;
 }
 .img-thumbnail {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   height: auto;
   padding: 4px;
@@ -5569,7 +5568,7 @@ button.close {
 .carousel-caption .btn {
   text-shadow: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 728px) {
   .carousel-control .glyphicon-chevron-left,
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-prev,
@@ -5637,7 +5636,7 @@ button.close {
   clear: both;
 }
 .center-block {
-  display: block;
+  display: flex;
   margin-right: auto;
   margin-left: auto;
 }
