@@ -27,7 +27,7 @@ console.log(data[0].album.image_url);
 document.querySelector('#tracks').innerHTML = "";
     for (let i = 0; i < 5; i++) {
         const template = `
-            <section class="track-item preview" onclick="playsong('${data[i].id}')">
+            <section class="track-item preview" onclick="playsong('${data[i].id}')" tabindex="0">
             <img alt="this is an album cover for ${data[i].name}" src="${data[i].album.image_url}">
             <i class="fas fa-play play-track" aria-hidden="true"></i>
             <div class="label">
@@ -66,24 +66,25 @@ async function getAlbums (term) {
    //  console.log(albumsEndpoint);
 
     const data = await fetch(albumsEndpoint).then(response => response.json());
-// console.log(data);
-
+ console.log(data);
 document.querySelector('#albums').innerHTML = "";
     for (let i = 0; i < 10; i++) {
+
         const template = `
-        <section class="album-card" id="2lATw9ZAVp7ILQcOKPCPqp" onclick="playsong('${data[i].id}'>
+        <section class="album-card">
             <div>
-                <img alt="this is an album cover for ${data[i].name}" src="${data[i].album.image_url}"">
+                <img alt="this is an album cover for ${data[i].name}" src="${data[i].image_url}">
                     <h2>${data[i].name}</h2>
              <div class="footer">
-                 <a href="https://open.spotify.com/album/2lATw9ZAVp7ILQcOKPCPqp" target="_blank">
+                 <a href="https://open.spotify.com/album/${data[i].id}" target="_blank">
                 view on spotify
                  </a>
             </div>
          </div>
     </section>
         `;
-        document.querySelector('#albums').innerHTML = template;
+        console.log (template);
+        document.querySelector('#albums').innerHTML += template;
     }
 }
 
