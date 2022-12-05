@@ -12,8 +12,6 @@ function search (ev) {
     }
 }
 
-
-
 async function getTracks (term) {
    const tracksEndpoint = baseURL + "?q=" + term + "&type=track";
    console.log(tracksEndpoint);
@@ -46,7 +44,6 @@ document.querySelector('#tracks').innerHTML = "";
 }
 
 
-
 //job of the pllay song function is to create an iframe and 
 // raplace the content in the #artist region of the iframe
 function playsong(id) {
@@ -64,7 +61,6 @@ function playsong(id) {
 }
 
 
-
 async function getAlbums (term) {
     const albumsEndpoint = baseURL + "?q=" + term + "&type=album";
    //  console.log(albumsEndpoint);
@@ -72,25 +68,24 @@ async function getAlbums (term) {
     const data = await fetch(albumsEndpoint).then(response => response.json());
 // console.log(data);
 
-//clear out old stuff before adding new stuff
 document.querySelector('#albums').innerHTML = "";
     for (let i = 0; i < 10; i++) {
         const template = `
-            <section class="album-card preview"8onclick="playsong('${data[i].id}')">
-            <img alt="this is an album cover for ${data[i].name}" src="${data[i].album.image_url}">
-            <i class="fas fa-play play-album" aria-hidden="true"></i>
-            <div class="label">
-                <h2>${data[i].name}</h2>
-                <p>
-                    ${data[i].artist.name}
-                </p>
+        <section class="album-card" id="2lATw9ZAVp7ILQcOKPCPqp" onclick="playsong('${data[i].id}'>
+            <div>
+                <img alt="this is an album cover for ${data[i].name}" src="${data[i].album.image_url}"">
+                    <h2>${data[i].name}</h2>
+             <div class="footer">
+                 <a href="https://open.spotify.com/album/2lATw9ZAVp7ILQcOKPCPqp" target="_blank">
+                view on spotify
+                 </a>
             </div>
-            </section>
+         </div>
+    </section>
         `;
-        document.querySelector('#albums').insertAdjacentHTML('beforeend', template);
+        document.querySelector('#albums').innerHTML = template;
     }
 }
-
 
 
 async function getArtist (term) {
